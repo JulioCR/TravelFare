@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="809.0" prefWidth="1157.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funtravel.travelfare.controller.DriverController">
+   <children>
+      <TableView fx:id="tblDriver" layoutX="233.0" layoutY="127.0" prefHeight="635.0" prefWidth="902.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="125.0" text="Name" />
+          <TableColumn fx:id="colSurname" prefWidth="114.0" text="Surname" />
+            <TableColumn fx:id="colEmail" prefWidth="147.0" text="E-mail" />
+            <TableColumn fx:id="colVehicleType" prefWidth="186.0" text="Vehicle Type" />
+            <TableColumn fx:id="colBaseFarePrice" prefWidth="151.0" text="Base Fare Price" />
+            <TableColumn fx:id="colBaseFareDistance" prefWidth="178.0" text="Base Fare Distance" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDriverAdd" layoutX="64.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnDriverAddClick" text="Add Driver" />
+      <Button fx:id="btnDriverModify" layoutX="53.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnDriverModifyClick" text="Modify Driver" />
+      <Button fx:id="btnDriverDelete" layoutX="56.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnDriverDeleteClick" text="Delete Driver" />
+      <Button fx:id="btnCalculateFare" layoutX="51.0" layoutY="567.0" mnemonicParsing="false" onAction="#btnCalculateFareClick" text="Calculate Fare" />
+      <Label layoutX="351.0" layoutY="32.0" text="Driver Fare Calculator" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="164.0" text="Table Controls">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="47.0" layoutY="519.0" text="Fare Controls">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="1021.0" layoutY="775.0" text="by Julio Rodriguez">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

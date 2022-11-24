@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="924.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funtravel.travelfare.controller.DriverFareController">
+   <children>
+      <TableView fx:id="tblDriverFare" layoutX="91.0" layoutY="263.0" prefHeight="580.0" prefWidth="594.0">
+        <columns>
+          <TableColumn fx:id="colDriverName" prefWidth="197.0" sortable="false" text="Driver Name" />
+          <TableColumn fx:id="colVehicleType" prefWidth="242.0" sortable="false" text="Vehicle Type" />
+            <TableColumn fx:id="colTotalFare" minWidth="0.0" prefWidth="154.0" sortable="false" text="Total Fare" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnOk" layoutX="212.0" layoutY="854.0" mnemonicParsing="false" onAction="#btnOkClick" text="OK" />
+      <Button fx:id="btnFareSave" layoutX="464.0" layoutY="854.0" mnemonicParsing="false" onAction="#btnFareSaveClick" text="Save Results" />
+      <Label layoutX="332.0" layoutY="30.0" text="Fare Prices" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="76.0" text="Distance Traveled:" />
+      <Label layoutX="164.0" layoutY="118.0" text="Traveled Unit:" />
+      <Label layoutX="111.0" layoutY="160.0" text="Cost Per Distance Traveled:" />
+      <Label fx:id="lblDistanceTraveled" layoutX="534.0" layoutY="76.0" text="0" />
+      <Label fx:id="lblTraveledUnit" layoutX="534.0" layoutY="118.0" text="0" />
+      <Label fx:id="lblCostPerDistanceTraveled" layoutX="534.0" layoutY="160.0" text="0" />
+      <Label layoutX="327.0" layoutY="215.0" text="Cheapest Fares:" />
+   </children>
+</AnchorPane>
