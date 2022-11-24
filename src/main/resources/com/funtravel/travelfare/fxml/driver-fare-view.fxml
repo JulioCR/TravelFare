@@ -8,9 +8,9 @@
    <children>
       <TableView fx:id="tblDriverFare" layoutX="91.0" layoutY="263.0" prefHeight="580.0" prefWidth="594.0">
         <columns>
-          <TableColumn fx:id="colDriverName" prefWidth="197.0" sortable="false" text="Driver Name" />
-          <TableColumn fx:id="colVehicleType" prefWidth="242.0" sortable="false" text="Vehicle Type" />
-            <TableColumn fx:id="colTotalFare" minWidth="0.0" prefWidth="154.0" sortable="false" text="Total Fare" />
+          <TableColumn fx:id="colDriverName" prefWidth="197.0" text="Driver Name" />
+          <TableColumn fx:id="colVehicleType" prefWidth="242.0" text="Vehicle Type" />
+            <TableColumn fx:id="colTotalFare" minWidth="0.0" prefWidth="154.0" text="Total Fare" />
         </columns>
       </TableView>
       <Button fx:id="btnOk" layoutX="212.0" layoutY="854.0" mnemonicParsing="false" onAction="#btnOkClick" text="OK" />
